@@ -11,7 +11,7 @@ public class App {
 
         System.out.println("Inicializando catalogo de Metflix");
 
-        miMetflix.inicializarCatalogo();//Estoy llamando al metodo que crea las pelis y series.
+        miMetflix.inicializarCatalogo();
 
         Serie serieBuscada = miMetflix.buscarSerie("How I met your mother");
 
@@ -40,9 +40,9 @@ public class App {
             System.out.println("Es un episodio");
         }
 
-        //Ahora quiero que si es un Websodio, imprima el Link del websodio.
+       
         if (episodio instanceof Websodio) {
-            //Castear: es el proceso donde "desenmascaramos" a una variable.
+       
             Websodio websodio = (Websodio) episodio;
             System.out.println("El link del websodio es: " + websodio.getLink());
         }

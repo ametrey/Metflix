@@ -2,7 +2,7 @@ public class Idioma {
     private String nombre;
     private String alfabeto;
 
-    //GETTERS/SETTERS
+
 
     public String getNombre() {
         return this.nombre;

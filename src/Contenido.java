@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Contenido {
 
-    //CONSTRUCTOR
 
     public Contenido (String nombre){
         this.nombre = nombre;

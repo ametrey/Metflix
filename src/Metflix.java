@@ -6,11 +6,11 @@ public class Metflix {
     public List<Pelicula> peliculas = new ArrayList<>();
     public List<Serie> series = new ArrayList<>();
 
-    //Metodo que inicializa el catalogo cno las pelis/series qeu querramos
+  
     public void inicializarCatalogo() {
 
         
-        Pelicula titanic = new Pelicula("Titanic", 1997, 210); //Estas ultimoas 2 lineas: Pelicula titanic = new Pelicula();
+        Pelicula titanic = new Pelicula("Titanic", 1997, 210); 
 
         Actor actor = new Actor("Leo DiCaprio");
      
@@ -22,7 +22,7 @@ public class Metflix {
 
         Pelicula batman = new Pelicula("Batman: el caballero de la nohe", 2008, 152);
       
-        actor = new Actor("Christian Bale"); //Creo un nuevo actor, pero referenciado con la variable actor
+        actor = new Actor("Christian Bale");
       
         batman.getActores().add(actor);
 
@@ -129,41 +129,26 @@ public class Metflix {
 
     public Serie buscarSerie(String nombreABuscar) {
 
-        // series = | serie1 | serie2 | serie25 | serie40 |
-        //vamos a usar el foreach: que sirve para recorrer listas
-        //este ciclo, tiene una variable, qeu apunta en cada vuelta
-        //a cada elemento de la lista
-        //o sea la primer vez, va a apuntar a serie1, despues a serie2 ddesp
-        //serie25 hasta que termina.
+   
         for (Serie serie : this.series) {
-            //pregunto si el nombre de la serie actual
-            //que estoy recorriendo es la que necesito
+           
             if (serie.getNombre().equals(nombreABuscar))
-                return serie; //devuelvo esta serie.
+                return serie; 
         }
-        //si llego hasta aca, es porque no encontro la serie.
+      
         return null;
 
     }
 
     public Serie buscarSerieV2(String nombreABuscar) {
         Serie serieBuscada = null;
-        //En este caso se recorre TODO(aunque haya 1000 series)
-        //y al final se devuelve si encontr una serie.
-        //en el caso anterior, se devuelve una vez encontrada.
-        //ej si hay 1000 series pero esta en la posicion 3, hace 3 vueltas
+      
         for (Serie serie : this.series) {
             if (serie.getNombre().equals(nombreABuscar))
                 serieBuscada = serie;
         }
         return serieBuscada;
-        /*if (serieBuscada == null)
-            return null;
-        else
-            return serieBuscada;*/
-
+       
     }
 
-    //buscar un director
-    //
 }

@@ -1,6 +1,6 @@
 public class Pelicula extends Contenido {
 
-    //CONSTRUCTOR
+   
     public Pelicula(String nombre){
         super(nombre);
 

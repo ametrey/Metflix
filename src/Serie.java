@@ -14,7 +14,7 @@ public class Serie extends Contenido {
 
     public Temporada buscarTemporada(int numeroTemporada) {
         for (Temporada temporada : this.temporadas) {
-            if (temporada.getNumero() == numeroTemporada) { //si esto es verdadero, encontre la temporada
+            if (temporada.getNumero() == numeroTemporada) {
                 return temporada;
             }
 

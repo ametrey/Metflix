@@ -1,32 +1,29 @@
 public class Episodio {
 
-    //Constructor
     public Episodio(int numero, String nombre) {
         this.numero = numero;
         this.nombre = nombre;
     }
 
     public Episodio(int numero, String nombre, int duracion) {
-        this(numero, nombre); //llamando al coonstructor de 2 parametros
+        this(numero, nombre); 
         this.duracion = duracion;
     }
 
     private int numero;
     private String nombre;
-    private int duracion; //en minutos
+    private int duracion;
     private Director director;
     private String sinopsis;
 
-    //GETTERS/SETTERS
-    //GETTER => permite leer un valor de atributo
-    //SETTER => permite asignar un valor a un atributo
+ 
 
-    //GETTER
+ 
     public int getNumero() {
         return this.numero;
     }
 
-    //SETTER: palabra "set"+ Nombre attrib + (parametro)
+ 
     public void setNumero(int numero) {
         this.numero = numero;
     }

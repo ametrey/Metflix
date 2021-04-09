@@ -10,7 +10,7 @@ public class Temporada {
     }
     
     private int numero;
-    private String nombre; //Esto es el nombre de la temporada y no del capitulo
+    private String nombre; 
     private List<Episodio> episodios = new ArrayList<>();
 
     public int getNumero() {
